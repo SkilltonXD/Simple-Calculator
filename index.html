@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h2 draggable="true">My simple Calculator</h2>
+        <div>
+            <div class="calcu">
+                <div id="result_display" draggable="true"></div>
+            <div class="number-table">
+            <button class="num-style" onclick="result_display.innerText += 0">0</button>
+            <button class="num-style" onclick="result_display.innerText += 1">1</button>
+            <button class="num-style" onclick="result_display.innerText += 2">2</button>
+            <button class="num-style" onclick="result_display.innerText += 3">3</button>
+            <button class="num-style" onclick="result_display.innerText += 4">4</button>
+            <button class="num-style" onclick="result_display.innerText += 5">5</button>
+            <button class="num-style" onclick="result_display.innerText += 6">6</button>
+            <button class="num-style" onclick="result_display.innerText += 7">7</button>
+            <button class="num-style" onclick="result_display.innerText += 8">8</button>
+            <button class="num-style" onclick="result_display.innerText += 9">9</button></div>
+            <div class="operation-table">
+            <button class="op-style" onclick="result_display.innerText += '+'">+</button>
+            <button class="op-style" onclick="result_display.innerText += '-'">-</button>
+            <button class="op-style" onclick="result_display.innerText += '*'">x</button>
+            <button class="op-style" onclick="result_display.innerText += '/'">/</button>
+            <button class="op-style" onclick="result_display.innerText += '%'">%</button>
+            <button class="op-style" onclick="result_display.innerText = ''">CE</button>
+            <button class="equal-style" onclick="
+            result_display.innerText = eval(result_display.innerText);
+            ">=</button>
+        </div>
+        <p class="name">BANICO</p>
+    </main>
+</body>
+<script>let result_display = document.getElementById('result_display');</script>
+</html>

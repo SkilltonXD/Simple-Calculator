@@ -1,0 +1,86 @@
+*{padding: 0; margin: 0;}
+main {
+    width: 100%; height: 100vh;
+    background-color: gray;
+    overflow: auto;
+}
+h2 {
+    font-size: 30px;
+    margin-top: 2vh; margin-left: 10%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: burlywood;
+}
+.calcu {
+    width: 80%; height: 64vh; background-color: lightsalmon;
+    margin-top: 5%; margin-left: 10%;
+    border-radius: 20px;
+    display: grid;
+}
+#result_display {
+    width: 80%; height: 6vh; background-color: bisque;
+    border-radius: 10px;
+    justify-self: center;
+    margin-top: 3vh;
+    text-align: center;
+    padding-top: 3%;
+    font-size: 25px;
+    font-family: fantasy;
+}
+.number-table {
+    width: 68%; height: 30vh; background:linear-gradient(to bottom, white, gray);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 2%;
+    padding-right: 10px;padding-left: 10px; padding-top: 5vh;
+    border-radius: 10px;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    margin-top: 3vh;
+}
+.operation-table {
+    width: 90%; height: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    justify-self: center;
+    margin-top: 1vh;
+    margin-bottom: 2vh;
+    gap: 1%;
+}
+.num-style {
+    width: 100%; height: 12vh;
+    border-radius: 5px;
+    border: none;
+    background-color: burlywood;
+}
+.op-style {
+    width: 100%; height: 10vh;
+    border-radius: 5px;
+    border: none;
+}
+.equal-style {
+    background-color: orangered;
+    width: 100%; height: 10vh;
+    border-radius: 5px;
+    border: none;
+}
+.num-style:hover {
+    opacity: 0.8;
+    background-color: lightgoldenrodyellow;
+}
+.num-style:active {
+    opacity: 0.8;
+    background-color: gray;
+}
+.equal-style:hover {
+    opacity: 0.9;
+    background-color: tomato;
+}
+.equal-style:active {
+    background-color: red;
+    opacity: 0.9;
+}
+.name {
+    color: lightyellow;
+    margin-top: 5vh;
+    font-size: 25px;
+}
